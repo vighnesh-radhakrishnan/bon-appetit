@@ -18,7 +18,7 @@ function App() {
           color: "#333",
         }}
       >
-        Recipe Book
+        My Recipe Book
       </h1>
       <p
         style={{
