@@ -16,7 +16,10 @@ const RecipeCard = ({ recipe }) => {
           marginBottom: "20px",
           transition: "transform 0.2s ease, box-shadow 0.2s ease",
           cursor: "pointer",
-          height: "100%",
+          height: "200px",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
         }}
         onMouseOver={(e) => {
           e.currentTarget.style.transform = "translateY(-5px)";
