@@ -1,34 +1,25 @@
 import React from "react";
+import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 
 function App() {
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        height: "100vh",
-        fontFamily: "Arial, sans-serif",
-      }}
-    >
-      <h1
+    <Router>
+      <div
         style={{
-          fontSize: "2.5rem",
-          color: "#333",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          height: "100vh",
+          fontFamily: "Arial, sans-serif",
         }}
-      >
-        My Recipe Book
-      </h1>
-      <p
-        style={{
-          fontSize: "1.2rem",
-          color: "#666",
-        }}
-      >
-        Your personal collection of recipes
-      </p>
-    </div>
+      ></div>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/recipe/:id" element={<RecipePage />} />
+      </Routes>
+    </Router>
   );
 }
 
