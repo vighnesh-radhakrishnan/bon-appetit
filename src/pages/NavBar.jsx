@@ -23,7 +23,7 @@ const Navbar = () => {
             fontWeight: "bold",
           }}
         >
-          Bon Appetite
+          Bon Appétit
         </h1>
       </Link>
 
