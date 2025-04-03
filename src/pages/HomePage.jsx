@@ -20,6 +20,7 @@ const RecipeCard = ({ recipe }) => {
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
+          fontFamily: "garamond",
         }}
         onMouseOver={(e) => {
           e.currentTarget.style.transform = "translateY(-5px)";

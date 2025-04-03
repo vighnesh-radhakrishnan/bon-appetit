@@ -17,6 +17,7 @@ const RecipePage = () => {
             marginTop: "20px",
             color: "black",
             textDecoration: "underline",
+            fontFamily: "garamond",
           }}
         >
           Back to recipes
@@ -26,7 +27,7 @@ const RecipePage = () => {
   }
 
   return (
-    <div>
+    <div style={{ fontFamily: "garamond" }}>
       <Link
         to="/"
         style={{
