@@ -76,10 +76,9 @@ const RecipePage = () => {
           <tr>
             <td
               style={{
-                width: "30%",
+                width: "25%",
                 verticalAlign: "top",
                 borderRight: "1px solid #eaeaea",
-                paddingRight: "20px",
               }}
             >
               <h2 style={{ fontSize: "20px", marginBottom: "15px" }}>
@@ -127,9 +126,9 @@ const RecipePage = () => {
                   <li
                     key={index}
                     style={{
-                      marginBottom: "20px",
+                      marginBottom: "10px",
                       fontSize: "16px",
-                      lineHeight: "1.6",
+                      lineHeight: "1.4",
                     }}
                   >
                     {step}
