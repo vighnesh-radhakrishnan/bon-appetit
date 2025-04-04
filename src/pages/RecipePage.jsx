@@ -26,8 +26,16 @@ const RecipePage = () => {
     );
   }
 
+  // Apply a specific class name for easier debugging
   return (
-    <div style={{ fontFamily: "garamond" }}>
+    <div
+      style={{
+        fontFamily: "garamond",
+        maxWidth: "1000px",
+        margin: "0 auto",
+        padding: "20px",
+      }}
+    >
       <Link
         to="/"
         style={{
@@ -56,27 +64,82 @@ const RecipePage = () => {
         <span>Difficulty: {recipe.difficulty}</span>
       </div>
 
-      <div style={{ marginBottom: "30px" }}>
-        <h2 style={{ fontSize: "20px", marginBottom: "10px" }}>Ingredients</h2>
-        <ul style={{ paddingLeft: "20px" }}>
-          {recipe.ingredients.map((ingredient, index) => (
-            <li key={index} style={{ marginBottom: "5px" }}>
-              {ingredient}
-            </li>
-          ))}
-        </ul>
-      </div>
+      {/* Create a table-like structure for more reliable layout */}
+      <table
+        style={{
+          width: "100%",
+          borderCollapse: "separate",
+          borderSpacing: "20px 0",
+        }}
+      >
+        <tbody>
+          <tr>
+            <td
+              style={{
+                width: "30%",
+                verticalAlign: "top",
+                borderRight: "1px solid #eaeaea",
+                paddingRight: "20px",
+              }}
+            >
+              <h2 style={{ fontSize: "20px", marginBottom: "15px" }}>
+                Ingredients
+              </h2>
+              <ul
+                style={{
+                  paddingLeft: "20px",
+                  listStyleType: "circle",
+                  marginTop: 0,
+                }}
+              >
+                {recipe.ingredients.map((ingredient, index) => (
+                  <li
+                    key={index}
+                    style={{
+                      marginBottom: "10px",
+                      fontSize: "16px",
+                      lineHeight: "1.4",
+                    }}
+                  >
+                    {ingredient}
+                  </li>
+                ))}
+              </ul>
+            </td>
 
-      <div>
-        <h2 style={{ fontSize: "20px", marginBottom: "10px" }}>Instructions</h2>
-        <ol style={{ paddingLeft: "20px" }}>
-          {recipe.instructions.map((step, index) => (
-            <li key={index} style={{ marginBottom: "10px" }}>
-              {step}
-            </li>
-          ))}
-        </ol>
-      </div>
+            <td
+              style={{
+                width: "70%",
+                verticalAlign: "top",
+                paddingLeft: "20px",
+              }}
+            >
+              <h2 style={{ fontSize: "20px", marginBottom: "15px" }}>
+                Instructions
+              </h2>
+              <ol
+                style={{
+                  paddingLeft: "25px",
+                  marginTop: 0,
+                }}
+              >
+                {recipe.instructions.map((step, index) => (
+                  <li
+                    key={index}
+                    style={{
+                      marginBottom: "20px",
+                      fontSize: "16px",
+                      lineHeight: "1.6",
+                    }}
+                  >
+                    {step}
+                  </li>
+                ))}
+              </ol>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   );
 };
