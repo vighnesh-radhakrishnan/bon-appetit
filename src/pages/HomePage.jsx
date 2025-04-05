@@ -60,7 +60,18 @@ const RecipeCard = ({ recipe }) => {
           }}
         >
           <span>{recipe.time} min</span>
-          <span>{recipe.difficulty}</span>
+          <div style={{ display: "flex", flexDirection: "row" }}>
+            {" "}
+            <div
+              style={{
+                width: "10px",
+                height: "10px",
+                borderRadius: "50%",
+                backgroundColor: recipe.isVegetarian ? "#4CAF50" : "#F44336",
+              }}
+            />
+            <span>{recipe.difficulty}</span>
+          </div>
         </div>
       </div>
     </Link>
