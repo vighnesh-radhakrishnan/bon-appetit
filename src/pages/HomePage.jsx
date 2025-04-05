@@ -33,7 +33,7 @@ const RecipeCard = ({ recipe }) => {
       >
         <h2
           style={{
-            fontSize: "18px",
+            fontSize: "20px",
             marginTop: 0,
             marginBottom: "10px",
             textAlign: "center",
@@ -57,10 +57,18 @@ const RecipeCard = ({ recipe }) => {
             marginTop: "15px",
             fontSize: "14px",
             color: "#888",
+            alignItems: "center",
           }}
         >
           <span>{recipe.time} min</span>
-          <div style={{ display: "flex", flexDirection: "row" }}>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              gap: "5px",
+              alignItems: "center",
+            }}
+          >
             {" "}
             <div
               style={{
