@@ -62,9 +62,21 @@ const RecipePage = () => {
         <span>Prep time: {recipe.time} minutes</span>
         <span>•</span>
         <span>Difficulty: {recipe.difficulty}</span>
+        <span>•</span>
+        <span style={{ display: "flex", alignItems: "center" }}>
+          {recipe.isVegetarian ? "Vegetarian" : "Non-vegetarian"}
+          <div
+            style={{
+              width: "10px",
+              height: "10px",
+              borderRadius: "50%",
+              backgroundColor: recipe.isVegetarian ? "#4CAF50" : "#F44336",
+              marginLeft: "5px",
+            }}
+          />
+        </span>
       </div>
 
-      {/* Create a table-like structure for more reliable layout */}
       <table
         style={{
           width: "100%",
