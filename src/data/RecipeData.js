@@ -6,6 +6,7 @@ const recipes = [
       "A simple, delicious pasta dish with eggs, cheese, and pancetta.",
     time: 30,
     difficulty: "Medium",
+    isVegetarian: false,
     ingredients: [
       "350g spaghetti",
       "150g pancetta, diced",
@@ -33,6 +34,7 @@ const recipes = [
       "Rich, fudgy brownies that are easy to make and perfect for dessert.",
     time: 45,
     difficulty: "Easy",
+    isVegetarian: false,
     ingredients: [
       "150g butter",
       "300g sugar",
@@ -62,6 +64,7 @@ const recipes = [
       "A quick, healthy breakfast or snack option that's endlessly customizable.",
     time: 10,
     difficulty: "Easy",
+    isVegetarian: false,
     ingredients: [
       "2 slices whole grain bread",
       "1 ripe avocado",
@@ -86,6 +89,7 @@ const recipes = [
       "A classic pizza with a crispy crust, fresh tomatoes, and melted mozzarella.",
     time: 60,
     difficulty: "Medium",
+    isVegetarian: true,
     ingredients: [
       "500g pizza dough",
       "200g tomato sauce",
@@ -112,6 +116,7 @@ const recipes = [
       "A quick, colorful, and nutritious meal perfect for busy weeknights.",
     time: 25,
     difficulty: "Easy",
+    isVegetarian: true,
     ingredients: [
       "2 tbsp vegetable oil",
       "2 cloves garlic, minced",
