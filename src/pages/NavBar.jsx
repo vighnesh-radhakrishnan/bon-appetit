@@ -1,9 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
-  const [searchTerm, setSearchTerm] = useState("");
-
+const Navbar = ({ searchTerm, onSearch }) => {
   return (
     <nav
       style={{
@@ -26,7 +24,6 @@ const Navbar = () => {
           Bon Appétit
         </h1>
       </Link>
-
       <div
         style={{
           display: "flex",
@@ -37,7 +34,7 @@ const Navbar = () => {
           type="text"
           placeholder="Search recipes..."
           value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
+          onChange={(e) => onSearch(e.target.value)}
           style={{
             padding: "10px 15px",
             border: "1px solid #ddd",
@@ -57,6 +54,7 @@ const Navbar = () => {
             cursor: "pointer",
             fontSize: "14px",
           }}
+          onClick={() => onSearch(searchTerm)}
         >
           Search
         </button>

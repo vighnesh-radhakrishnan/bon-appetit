@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import recipes from "../data/RecipeData";
+// import recipes from "../data/RecipeData";
 
 const RecipeCard = ({ recipe }) => {
   return (
@@ -86,7 +86,7 @@ const RecipeCard = ({ recipe }) => {
   );
 };
 
-const HomePage = () => {
+const HomePage = ({ recipes }) => {
   return (
     <div>
       <h2 style={{ marginBottom: "20px" }}>My Recipes</h2>
