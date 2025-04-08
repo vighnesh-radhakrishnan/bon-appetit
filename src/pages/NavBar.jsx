@@ -43,21 +43,6 @@ const Navbar = ({ searchTerm, onSearch }) => {
             width: "250px",
           }}
         />
-        <button
-          style={{
-            marginLeft: "10px",
-            padding: "10px 15px",
-            backgroundColor: "black",
-            color: "white",
-            border: "none",
-            borderRadius: "4px",
-            cursor: "pointer",
-            fontSize: "14px",
-          }}
-          onClick={() => onSearch(searchTerm)}
-        >
-          Search
-        </button>
       </div>
     </nav>
   );
