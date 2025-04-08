@@ -1,5 +1,6 @@
 {
-  "name": "recipe-app",
+  "homepage": "https://vighnesh-radhakrishnan.github.io/bon-appetit",
+  "name": "bon-appetit",
   "private": true,
   "version": "0.1.0",
   "type": "module",
