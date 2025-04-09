@@ -19,6 +19,7 @@ const Navbar = ({ searchTerm, onSearch }) => {
             margin: 0,
             fontSize: "24px",
             fontWeight: "bold",
+            fontFamily: "Playwrite USA Modern",
           }}
         >
           Bon Appétit
@@ -32,7 +33,7 @@ const Navbar = ({ searchTerm, onSearch }) => {
       >
         <input
           type="text"
-          placeholder="Search recipes..."
+          placeholder="Search recipes"
           value={searchTerm}
           onChange={(e) => onSearch(e.target.value)}
           style={{
