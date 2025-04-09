@@ -19,7 +19,7 @@ const Navbar = ({ searchTerm, onSearch }) => {
             margin: 0,
             fontSize: "24px",
             fontWeight: "bold",
-            fontFamily: "Playwrite USA Modern",
+            fontFamily: "Playwrite US Modern",
           }}
         >
           Bon Appétit
