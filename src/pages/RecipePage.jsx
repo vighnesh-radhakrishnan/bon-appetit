@@ -48,7 +48,9 @@ const RecipePage = () => {
         &larr; Back to recipes
       </Link>
 
-      <h1 style={{ marginBottom: "15px" }}>{recipe.title}</h1>
+      <h1 style={{ marginBottom: "15px", fontFamily: "Playwrite US Modern" }}>
+        {recipe.title}
+      </h1>
 
       <div
         style={{
@@ -82,6 +84,7 @@ const RecipePage = () => {
           width: "100%",
           borderCollapse: "separate",
           borderSpacing: "20px 0",
+          fontFamily: "Playwrite US Modern",
         }}
       >
         <tbody>

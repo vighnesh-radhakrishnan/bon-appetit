@@ -33,10 +33,11 @@ const RecipeCard = ({ recipe }) => {
       >
         <h2
           style={{
-            fontSize: "20px",
+            fontSize: "15px",
             marginTop: 0,
             marginBottom: "10px",
             textAlign: "center",
+            fontFamily: "Playwrite US Modern",
           }}
         >
           {recipe.title}
@@ -46,6 +47,7 @@ const RecipeCard = ({ recipe }) => {
             color: "#666",
             margin: "10px 0",
             fontSize: "14px",
+            fontFamily: "Playwrite US Modern",
           }}
         >
           {recipe.description}
@@ -89,7 +91,9 @@ const RecipeCard = ({ recipe }) => {
 const HomePage = ({ recipes }) => {
   return (
     <div>
-      <h2 style={{ marginBottom: "20px" }}>My Recipes</h2>
+      <h2 style={{ marginBottom: "20px", fontFamily: "garamond" }}>
+        My Recipes
+      </h2>
       <div
         style={{
           display: "grid",
