@@ -57,7 +57,7 @@ const RecipePage = () => {
           display: "flex",
           gap: "15px",
           marginBottom: "25px",
-          fontSize: "14px",
+          fontSize: "17px",
           color: "#666",
         }}
       >
