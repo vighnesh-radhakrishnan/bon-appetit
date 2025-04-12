@@ -17,7 +17,7 @@ const Navbar = ({ searchTerm, onSearch }) => {
         <h1
           style={{
             margin: 0,
-            fontSize: "24px",
+            fontSize: "27px",
             fontWeight: "bold",
             fontFamily: "Playwrite US Modern",
           }}
@@ -42,6 +42,7 @@ const Navbar = ({ searchTerm, onSearch }) => {
             borderRadius: "4px",
             fontSize: "14px",
             width: "250px",
+            fontFamily: "garamond",
           }}
         />
       </div>
