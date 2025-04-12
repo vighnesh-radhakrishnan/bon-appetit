@@ -33,11 +33,11 @@ const RecipeCard = ({ recipe }) => {
       >
         <h2
           style={{
-            fontSize: "15px",
+            fontSize: "20px",
             marginTop: 0,
             marginBottom: "10px",
             textAlign: "center",
-            fontFamily: "Playwrite US Modern",
+            fontFamily: "garamond",
           }}
         >
           {recipe.title}
@@ -46,8 +46,9 @@ const RecipeCard = ({ recipe }) => {
           style={{
             color: "#666",
             margin: "10px 0",
-            fontSize: "14px",
+            fontSize: "12px",
             fontFamily: "Playwrite US Modern",
+            textAlign: "center",
           }}
         >
           {recipe.description}
