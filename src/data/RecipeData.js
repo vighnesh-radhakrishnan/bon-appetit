@@ -52,6 +52,36 @@ const recipes = [
       "Sprinkle with red pepper flakes or additional seasonings as desired.",
     ],
   },
+  {
+    id: "3",
+    title: "Vegetable Stir Fry",
+    description:
+      "A quick, colorful, and nutritious meal perfect for busy weeknights.",
+    time: 25,
+    difficulty: "Easy",
+    isVegetarian: true,
+    ingredients: [
+      "2 tbsp vegetable oil",
+      "2 cloves garlic, minced",
+      "1 inch piece ginger, grated",
+      "1 bell pepper, sliced",
+      "1 carrot, julienned",
+      "1 cup broccoli florets",
+      "1 cup snap peas",
+      "3 tbsp soy sauce",
+      "1 tbsp honey",
+      "Sesame seeds for garnish",
+    ],
+    instructions: [
+      "Heat oil in a wok or large frying pan over high heat.",
+      "Add garlic and ginger, stir for 30 seconds until fragrant.",
+      "Add vegetables, starting with the ones that take longest to cook (carrots, broccoli).",
+      "Stir-fry for 5-7 minutes until vegetables are tender-crisp.",
+      "Mix soy sauce and honey in a small bowl, then pour over vegetables.",
+      "Toss to coat and cook for another minute.",
+      "Serve hot over rice or noodles, garnished with sesame seeds.",
+    ],
+  },
 ];
 
 export default recipes;
