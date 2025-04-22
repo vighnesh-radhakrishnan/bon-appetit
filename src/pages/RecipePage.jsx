@@ -66,7 +66,7 @@ const RecipePage = () => {
         <span>Difficulty: {recipe.difficulty}</span>
         <span>•</span>
         <span style={{ display: "flex", alignItems: "center" }}>
-          {recipe.isVegetarian ? "Vegetarian" : "Non-vegetarian"}
+          {recipe.isVegetarian ? "Vegetarian" : "Non-Vegetarian"}
           <div
             style={{
               width: "10px",
