@@ -1,10 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import recipes from "../data/RecipeData";
 
 const RecipePage = () => {
   const { id } = useParams();
   const recipe = recipes.find((r) => r.id === id);
+
+  const [completedIngredients, setCompletedIngredients] = useState({});
+  const [completedSteps, setCompletedSteps] = useState({});
+
+  const toggleIngredient = (index) => {
+    setCompletedIngredients((prev) => ({
+      ...prev,
+      [index]: !prev[index],
+    }));
+  };
+
+  const toggleStep = (index) => {
+    setCompletedSteps((prev) => ({
+      ...prev,
+      [index]: !prev[index],
+    }));
+  };
 
   if (!recipe) {
     return (
@@ -26,7 +43,45 @@ const RecipePage = () => {
     );
   }
 
-  // Apply a specific class name for easier debugging
+  // new ingredient list rendering
+  const ingredientList = recipe.ingredients.map((ingredient, index) => (
+    <li
+      key={index}
+      onClick={() => toggleIngredient(index)}
+      style={{
+        marginBottom: "10px",
+        fontSize: "16px",
+        lineHeight: "1.4",
+        textDecoration: completedIngredients[index] ? "line-through" : "none",
+        opacity: completedIngredients[index] ? 0.6 : 1,
+        cursor: "pointer",
+        transition: "opacity 0.3s ease",
+      }}
+    >
+      {ingredient}
+    </li>
+  ));
+
+  // new instruction list rendering
+  const instructionList = recipe.instructions.map((step, index) => (
+    <li
+      key={index}
+      onClick={() => toggleStep(index)}
+      style={{
+        marginBottom: "10px",
+        fontSize: "16px",
+        lineHeight: "1.4",
+        textDecoration: completedSteps[index] ? "line-through" : "none",
+        opacity: completedSteps[index] ? 0.6 : 1,
+        cursor: "pointer",
+        transition: "opacity 0.3s ease",
+      }}
+    >
+      {step}
+    </li>
+  ));
+
+  // Update the table to use the new lists
   return (
     <div
       style={{
@@ -47,11 +102,9 @@ const RecipePage = () => {
       >
         &larr; Back to recipes
       </Link>
-
       <h1 style={{ marginBottom: "15px", fontFamily: "Playwrite US Modern" }}>
         {recipe.title}
       </h1>
-
       <div
         style={{
           display: "flex",
@@ -78,7 +131,6 @@ const RecipePage = () => {
           />
         </span>
       </div>
-
       <table
         style={{
           width: "100%",
@@ -106,21 +158,9 @@ const RecipePage = () => {
                   marginTop: 0,
                 }}
               >
-                {recipe.ingredients.map((ingredient, index) => (
-                  <li
-                    key={index}
-                    style={{
-                      marginBottom: "10px",
-                      fontSize: "16px",
-                      lineHeight: "1.4",
-                    }}
-                  >
-                    {ingredient}
-                  </li>
-                ))}
+                {ingredientList}
               </ul>
             </td>
-
             <td
               style={{
                 width: "70%",
@@ -137,18 +177,7 @@ const RecipePage = () => {
                   marginTop: 0,
                 }}
               >
-                {recipe.instructions.map((step, index) => (
-                  <li
-                    key={index}
-                    style={{
-                      marginBottom: "10px",
-                      fontSize: "16px",
-                      lineHeight: "1.4",
-                    }}
-                  >
-                    {step}
-                  </li>
-                ))}
+                {instructionList}
               </ol>
             </td>
           </tr>
