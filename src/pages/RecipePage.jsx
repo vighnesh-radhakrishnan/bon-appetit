@@ -53,7 +53,7 @@ const RecipePage = () => {
         fontSize: "16px",
         lineHeight: "1.4",
         textDecoration: completedIngredients[index] ? "line-through" : "none",
-        opacity: completedIngredients[index] ? 0.6 : 1,
+        opacity: completedIngredients[index] ? 0.4 : 1,
         cursor: "pointer",
         transition: "opacity 0.3s ease",
       }}
@@ -72,7 +72,7 @@ const RecipePage = () => {
         fontSize: "16px",
         lineHeight: "1.4",
         textDecoration: completedSteps[index] ? "line-through" : "none",
-        opacity: completedSteps[index] ? 0.6 : 1,
+        opacity: completedSteps[index] ? 0.4 : 1,
         cursor: "pointer",
         transition: "opacity 0.3s ease",
       }}
