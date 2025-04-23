@@ -103,7 +103,13 @@ const RecipePage = () => {
       >
         &larr; Back to recipes
       </Link>
-      <div style={{ display: "flex", justifyContent: "space-between" }}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "end",
+        }}
+      >
         <div>
           <h1
             style={{ marginBottom: "15px", fontFamily: "Playwrite US Modern" }}

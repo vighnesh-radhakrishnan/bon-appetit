@@ -19,7 +19,6 @@ const RecipeTimer = () => {
         } else {
           clearInterval(interval);
           setIsActive(false);
-          // Play a sound when timer ends
           const audio = new Audio(
             "https://cdn.freesound.org/previews/411/411089_5121236-lq.mp3"
           );
@@ -73,16 +72,6 @@ const RecipeTimer = () => {
         backgroundColor: "#f9f9f9",
       }}
     >
-      <h3
-        style={{
-          fontSize: "18px",
-          fontWeight: "600",
-          marginBottom: "12px",
-        }}
-      >
-        Recipe Timer
-      </h3>
-
       <div
         style={{
           display: "flex",
