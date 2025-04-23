@@ -107,7 +107,7 @@ const RecipePage = () => {
         style={{
           display: "flex",
           justifyContent: "space-between",
-          alignItems: "end",
+          alignItems: "center",
         }}
       >
         <div>
