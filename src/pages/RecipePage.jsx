@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import recipes from "../data/RecipeData";
+import RecipeTimer from "../components/RecipeTimer";
 
 const RecipePage = () => {
   const { id } = useParams();
@@ -102,35 +103,43 @@ const RecipePage = () => {
       >
         &larr; Back to recipes
       </Link>
-      <h1 style={{ marginBottom: "15px", fontFamily: "Playwrite US Modern" }}>
-        {recipe.title}
-      </h1>
-      <div
-        style={{
-          display: "flex",
-          gap: "15px",
-          marginBottom: "25px",
-          fontSize: "17px",
-          color: "#666",
-        }}
-      >
-        <span>Prep time: {recipe.time} minutes</span>
-        <span>•</span>
-        <span>Difficulty: {recipe.difficulty}</span>
-        <span>•</span>
-        <span style={{ display: "flex", alignItems: "center" }}>
-          {recipe.isVegetarian ? "Vegetarian" : "Non-Vegetarian"}
+      <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <div>
+          <h1
+            style={{ marginBottom: "15px", fontFamily: "Playwrite US Modern" }}
+          >
+            {recipe.title}
+          </h1>
           <div
             style={{
-              width: "10px",
-              height: "10px",
-              borderRadius: "50%",
-              backgroundColor: recipe.isVegetarian ? "#4CAF50" : "#F44336",
-              marginLeft: "5px",
+              display: "flex",
+              gap: "15px",
+              marginBottom: "25px",
+              fontSize: "17px",
+              color: "#666",
             }}
-          />
-        </span>
+          >
+            <span>Prep time: {recipe.time} minutes</span>
+            <span>•</span>
+            <span>Difficulty: {recipe.difficulty}</span>
+            <span>•</span>
+            <span style={{ display: "flex", alignItems: "center" }}>
+              {recipe.isVegetarian ? "Vegetarian" : "Non-Vegetarian"}
+              <div
+                style={{
+                  width: "10px",
+                  height: "10px",
+                  borderRadius: "50%",
+                  backgroundColor: recipe.isVegetarian ? "#4CAF50" : "#F44336",
+                  marginLeft: "5px",
+                }}
+              />
+            </span>
+          </div>
+        </div>
+        <RecipeTimer />
       </div>
+
       <table
         style={{
           width: "100%",
