@@ -1,9 +1,16 @@
 import React, { useState, useEffect } from "react";
-const RecipeTimer = () => {
-  const [minutes, setMinutes] = useState("");
+const RecipeTimer = ({ time }) => {
+  const [minutes, setMinutes] = useState(time || "");
   const [seconds, setSeconds] = useState(0);
   const [isActive, setIsActive] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
+
+  useEffect(() => {
+    if (time && !isActive) {
+      setMinutes(time);
+    }
+  }, [time, isActive]);
+
   useEffect(() => {
     let interval = null;
     if (isActive && !isPaused) {

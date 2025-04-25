@@ -143,7 +143,7 @@ const RecipePage = () => {
             </span>
           </div>
         </div>
-        <RecipeTimer />
+        <RecipeTimer time={recipe.time} />
       </div>
 
       <table
