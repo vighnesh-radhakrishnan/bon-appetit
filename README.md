@@ -1,10 +1,21 @@
-# React + Vite
+## Bon Appétit
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bon Appétit is my personal recipe keepe — a place where I can store, edit, and manage my favorite recipes like a digital cookbook diary.
+It helps me easily follow my recipes, keep track of new ones, and update them whenever I want.
 
-Currently, two official plugins are available:
+This project is built using React with Vite for a fast and smooth development experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
+# Getting Started 
+
+Clone the repository and install the dependencies:
+`npm install`
+
+To run the development server:
+`npm run dev`
+
+To build the project for production:
+`npm run build`
+
+# Credits 
 Sound effect “Bell, Candle Damper, A (H1)” by InspectorJ (freesound.org), licensed under CC BY 4.0.
