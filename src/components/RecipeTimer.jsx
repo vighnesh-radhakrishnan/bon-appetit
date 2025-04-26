@@ -83,6 +83,7 @@ const RecipeTimer = ({ time }) => {
                 fontSize: "16px",
                 textAlign: "center",
                 boxSizing: "border-box",
+                fontFamily: "Playwrite US Modern",
               }}
             />
           ) : (
@@ -99,6 +100,7 @@ const RecipeTimer = ({ time }) => {
                 justifyContent: "center",
                 backgroundColor: "white",
                 boxSizing: "border-box",
+                fontFamily: "Playwrite US Modern",
               }}
             >
               {formatTime(minutes)}:{formatTime(seconds)}
@@ -120,6 +122,7 @@ const RecipeTimer = ({ time }) => {
                 fontSize: "14px",
                 height: "40px",
                 boxSizing: "border-box",
+                fontFamily: "Playwrite US Modern",
               }}
             >
               Start
@@ -138,6 +141,7 @@ const RecipeTimer = ({ time }) => {
                   fontSize: "14px",
                   height: "40px",
                   boxSizing: "border-box",
+                  fontFamily: "Playwrite US Modern",
                 }}
               >
                 {isPaused ? "Resume" : "Pause"}
@@ -154,6 +158,7 @@ const RecipeTimer = ({ time }) => {
                   fontSize: "14px",
                   height: "40px",
                   boxSizing: "border-box",
+                  fontFamily: "Playwrite US Modern",
                 }}
               >
                 Reset
@@ -167,6 +172,7 @@ const RecipeTimer = ({ time }) => {
           fontSize: "14px",
           color: "#666",
           height: "20px",
+          textAlign: "center",
         }}
       >
         {isActive && (
