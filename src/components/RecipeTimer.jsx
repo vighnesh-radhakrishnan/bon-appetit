@@ -115,14 +115,14 @@ const RecipeTimer = ({ time }) => {
               style={{
                 padding: "8px 16px",
                 borderRadius: "4px",
-                backgroundColor: minutes === "" ? "#e0e0e0" : "#4CAF50",
-                color: "white",
-                border: "none",
+                backgroundColor: "transparent",
+                color: "#4CAF50",
                 cursor: minutes === "" ? "default" : "pointer",
                 fontSize: "14px",
                 height: "40px",
                 boxSizing: "border-box",
                 fontFamily: "Playwrite US Modern",
+                border: "1px solid #4CAF50",
               }}
             >
               Start
@@ -134,9 +134,9 @@ const RecipeTimer = ({ time }) => {
                 style={{
                   padding: "8px 16px",
                   borderRadius: "4px",
-                  backgroundColor: "#FF9800",
-                  color: "white",
-                  border: "none",
+                  backgroundColor: "transparent",
+                  color: "#FF9800",
+                  border: "1px solid #FF9800",
                   cursor: "pointer",
                   fontSize: "14px",
                   height: "40px",
@@ -151,9 +151,9 @@ const RecipeTimer = ({ time }) => {
                 style={{
                   padding: "8px 16px",
                   borderRadius: "4px",
-                  backgroundColor: "#F44336",
-                  color: "white",
-                  border: "none",
+                  backgroundColor: "transparent",
+                  color: "#F44336",
+                  border: "1px solid #F44336",
                   cursor: "pointer",
                   fontSize: "14px",
                   height: "40px",
