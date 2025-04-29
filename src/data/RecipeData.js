@@ -32,7 +32,7 @@ const recipes = [
   },
   {
     id: "2",
-    title: "Fresh Avocado Toast",
+    title: "Ammuma's Special Egg Curry",
     description:
       "A quick, healthy breakfast or snack option that's endlessly customizable.",
     time: 10,
@@ -57,7 +57,7 @@ const recipes = [
   },
   {
     id: "3",
-    title: "Vegetable Stir Fry",
+    title: "Ammas's Prawn Curry",
     description:
       "A quick, colorful, and nutritious meal perfect for busy weeknights.",
     time: 25,
